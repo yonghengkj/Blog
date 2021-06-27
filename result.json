@@ -1,0 +1,62 @@
+{
+    "header": [
+        " *   ",
+        " *   文件描述：本文件为请求参数，包括不限于网址、请求头、响应头、COOKIE、Referer、UserAgent",
+        " *   本文件仅为记录详细请求参数便于调试，非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq",
+        " *   "
+    ],
+    "directory": "www-madelove-top-bkpen1on",
+    "options": {
+        "url": "https://www.madelove.top/",
+        "index": "index.html",
+        "domain": "www.madelove.top",
+        "origin": "https://www.madelove.top",
+        "ipaddress": "183.131.200.61",
+        "originURL": "https://www.madelove.top/",
+        "filenameGenerator": "byType",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "accept-encoding": "gzip",
+                "cache-control": "no-cache",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.me/"
+            }
+        },
+        "response": {
+            "statusCode": 200,
+            "headers": {
+                "server": "marco/2.14",
+                "date": "Sun, 27 Jun 2021 09:31:19 GMT",
+                "content-type": "text/html",
+                "transfer-encoding": "chunked",
+                "connection": "close",
+                "vary": "Accept-Encoding",
+                "x-request-id": "d81ca6d6c10822db1b328f4e8764a8ad; c8eeb33b121ed3bf97a6eb039666d96e",
+                "x-source": "U/200",
+                "x-upyun-content-length": "3107",
+                "etag": "W/\"0e39a2f1071260d8b9a0426e90239fa9\"",
+                "x-upyun-content-type": "text/html",
+                "last-modified": "Fri, 10 Jan 2020 07:06:20 GMT",
+                "expires": "Thu, 01 Jul 2021 02:13:43 GMT",
+                "cache-control": "max-age=691200",
+                "age": "371856",
+                "via": "T.46.H, V.mix-js-czx2-046, T.74.H, M.ctn-zj-jgh-061",
+                "content-encoding": "gzip"
+            }
+        }
+    },
+    "user": {
+        "isWhite": false
+    },
+    "formatter": [
+        "saveOriginal"
+    ],
+    "time": {
+        "start": 1624786278647,
+        "end": 1624786283227,
+        "spend": 4.58
+    }
+}

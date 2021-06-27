@@ -1,0 +1,104 @@
+{
+    "header": [
+        " *   ",
+        " *   文件描述：本文件为网页资源信息",
+        " *   success字段为下载保存成功的资源;failures字段则为下载保存失败的资源URL",
+        " *   success字段为标准树结构，每一层资源父子关系、URL和保存路径清晰明了",
+        " *   本文件仅为记录检测到的网页资源以便于调试，非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq",
+        " *   "
+    ],
+    "success": [
+        {
+            "url": "https://www.madelove.top/",
+            "path": "index.html",
+            "children": [
+                {
+                    "url": "https://www.madelove.top/images/hexo-inverted.png",
+                    "path": "images/hexo-inverted.png"
+                },
+                {
+                    "url": "https://www.madelove.top/js/pace.min.js",
+                    "path": "js/pace.min.js"
+                },
+                {
+                    "url": "https://www.madelove.top/js/jquery-2.0.3.min.js",
+                    "path": "js/jquery-2.0.3.min.js"
+                },
+                {
+                    "url": "https://www.madelove.top/js/lazyload.min.js",
+                    "path": "js/lazyload.min.js"
+                },
+                {
+                    "url": "https://www.madelove.top/js/busuanzi-2.3.pure.min.js",
+                    "path": "js/busuanzi-2.3.pure.min.js"
+                },
+                {
+                    "url": "https://www.madelove.top/fancybox/jquery.fancybox.min.js",
+                    "path": "js/jquery.fancybox.min.js"
+                },
+                {
+                    "url": "https://www.madelove.top/js/search.js",
+                    "path": "js/search.js"
+                },
+                {
+                    "url": "https://www.madelove.top/js/technology.js",
+                    "path": "js/technology.js"
+                },
+                {
+                    "url": "https://www.madelove.top/css/style.css",
+                    "path": "css/style.css",
+                    "children": [
+                        {
+                            "url": "https://www.madelove.top/css/feathericon/feathericon.eot",
+                            "path": "fonts/feathericon.eot"
+                        },
+                        {
+                            "url": "https://www.madelove.top/css/feathericon/feathericon.woff",
+                            "path": "fonts/feathericon.woff"
+                        },
+                        {
+                            "url": "https://www.madelove.top/css/feathericon/feathericon.ttf",
+                            "path": "fonts/feathericon.ttf"
+                        },
+                        {
+                            "url": "https://www.madelove.top/css/feathericon/feathericon.svg",
+                            "path": "images/feathericon.svg"
+                        }
+                    ]
+                },
+                {
+                    "url": "https://www.madelove.top/css/technology.css",
+                    "path": "css/technology.css",
+                    "children": [
+                        {
+                            "url": "https://www.madelove.top/images/outer-ring.png",
+                            "path": "images/outer-ring.png"
+                        },
+                        {
+                            "url": "https://www.madelove.top/images/middle-ring.png",
+                            "path": "images/middle-ring.png"
+                        },
+                        {
+                            "url": "https://www.madelove.top/images/middle-ring-2.png",
+                            "path": "images/middle-ring-2.png"
+                        },
+                        {
+                            "url": "https://www.madelove.top/images/inner-ring.png",
+                            "path": "images/inner-ring.png"
+                        }
+                    ]
+                },
+                {
+                    "url": "https://www.madelove.top/fancybox/jquery.fancybox.min.css",
+                    "path": "css/jquery.fancybox.min.css"
+                },
+                {
+                    "url": "https://www.madelove.top/favicon.ico",
+                    "path": "favicon.ico"
+                }
+            ]
+        }
+    ],
+    "failures": []
+}

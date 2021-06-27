@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
+<html xmlns="xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>大头云音乐APP下载--永恒科技</title>
+<link rel="shortcut icon" href="dato/favicon.ico" type="image/x-icon">
+<meta name="description" content="酷我音乐_APP">
+<meta name="keywords" content="酷我音乐APP下载--永恒科技">
+<link rel="stylesheet" type="text/css" href="css/g.css">
+<link rel="stylesheet" type="text/css" href="css/download.css">
+<script src="js/myscript.js"></script>
+</head>
+<body class="pc-contanier">
+<div class="pc-wrap"></div>
+<div class="pc-bg pc-bg1 current"></div>
+<div class="pc-bg pc-bg2"></div>
+<div class="page-bg-btm"></div>
+<div id="particles-js">
+<canvas style="width: 60%; height: 70%;"></canvas>
+</div>
+<div class="pc-body">
+<div class="clearfix">
+<div class="pc-body-item">
+<div class="pc-pics-box img-box">
+<img src="dato/pic1.png" width="520" height="580" class="item current">
+<img src="dato/pic2.png" width="520" height="580" class="item">
+</div>
+</div>
+<div class="pc-body-item">
+<div class="pc-main">
+<div class="pc-logo ico">
+<img class="logo" src="dato/detail_logo_magapp.png">
+<span class="appname">酷我音乐APPvip版下载</span>
+<span class="version">使用电脑自带浏览器下载！</span>
+</div>
+<div class="pc-btns">
+<a href="yinyue.exe" class="btn">
+<span class="ico ico-ios"></span>
+<span class="txt">win版</span>
+</a>
+<a href="yinyue.apk" class="btn">
+<span class="ico ico-android"></span>
+<span class="txt">安卓</span>
+</a>
+</div>
+<div class="pc-erwei">
+<p> </p>
+<div class="img-box"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pc-bg-flag slider-flags">
+<span class="item current"></span>
+<span class="item"></span>
+</div>
+<div class="pc-copyright">Copyright © 2021大头云音乐_ 版权所有 All Rights Reserved.</div>
+<a href="javascript:void(0);" class="slider-prev"></a>
+<a href="javascript:void(0);" class="slider-next"></a>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var mainContent = $(".pc-body"),
+            pcBgs = $(".pc-bg"),
+            mainImgs = $(".pc-pics-box").find(".item"),
+            controlItems = $(".pc-bg-flag").find(".item"),
+            btnPrev = $(".slider-prev"),
+            btnNext = $(".slider-next"),
+            actionIndex = 0,
+            interval = 3000,
+            timer = 0;
+
+        var fadeAction = function(index){
+            controlItems.eq(index).addClass("current").siblings().removeClass("current");
+            mainImgs.eq(index).fadeIn("slow").siblings(".item").fadeOut("slow");
+            pcBgs.eq(index).fadeIn("slow").siblings(".pc-bg").fadeOut("slow");
+        };    
+
+        var autoPlay = function(){
+            if (actionIndex < pcBgs.length) {
+                actionIndex = (actionIndex+1) % pcBgs.length; 
+                fadeAction(actionIndex);
+            }                  
+        };    
+        timer = setInterval(autoPlay, interval);
+
+        controlItems.click(function(){
+            actionIndex = $(this).index();
+            fadeAction(actionIndex);
+        });
+
+        btnPrev.click(function(){
+            if (actionIndex >= 0 ) {
+                if (actionIndex == 0) actionIndex = pcBgs.length;
+                actionIndex = (actionIndex-1) % pcBgs.length;
+                fadeAction(actionIndex);
+            }
+        }).hover(function(evt){
+            clearInterval(timer);   
+        },function(evt){
+            timer = setInterval(autoPlay,interval);
+        });
+
+        btnNext.click(function(){
+            autoPlay();
+        }).hover(function(evt){
+            clearInterval(timer);   
+        },function(evt){
+            timer = setInterval(autoPlay,interval);
+        });
+
+        mainContent.hover(function(evt){
+            clearInterval(timer);   
+        },function(evt){
+            timer = setInterval(autoPlay,interval);
+        }); 
+    });
+</script>
+<script async="" src="js/analytics.js"></script>
+<script src="js/part1.js"></script>
+<script src="js/part2.js"></script>
+<script type="text/javascript" src="js/su.js"></script>
+</body>
+</html>
